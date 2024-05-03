@@ -1,0 +1,27 @@
+
+<%- include('partials/header')%>
+<%- include('partials/nav')%>
+
+<h1 class="text-[30px] text-center font-bold  mt-10">LOGIN USER</h1>
+
+<div class="w-[30vw] h-[70vh] bg-zinc-300 m-auto  rounded text-center  ">
+
+    
+
+    <form action="/register-user" method="post" class="m-auto">
+        <input type="text" placeholder="username" name="username" class="rounded w-[25vw] py-1 border-2 border-zinc-400 px-6 mt-8" >
+
+    <input type="password" placeholder="*********" name="username" class="rounded w-[25vw] py-1 border-2 border-zinc-400 px-6 mt-8" >
+
+    <div class="w-[25vw]   mt-5 m-auto flex justify-start" ><a href="">forget password ?</a></div>
+
+    <button class=" w-[15vw] py-2 bg-zinc-500 hover:bg-zinc-600 rounded text-white my-4 ">Login</button>
+
+    <p class="text-zinc-700">Don't have an account? <a href="/register" class="text-black">register</a></p>
+
+    </form>
+   
+
+</div>
+
+<%- include('partials/footer')%>
